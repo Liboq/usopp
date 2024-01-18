@@ -38,7 +38,7 @@ async function release() {
   execSync('git add ./package.json ./UPDATE_LOG.md');
   execSync(`git commit -m "v${nextVersion}"`);
   execSync(`git tag -a v${nextVersion} -m "v${nextVersion}"`);
-  execSync(`git push origin test`);
+  execSync(`git push origin main`);
   execSync(`git push origin v${nextVersion}`);
   console.log(`Publish Successfully...`);
 }
