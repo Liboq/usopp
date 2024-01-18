@@ -1,7 +1,7 @@
 {
   "build": {
     "beforeDevCommand": "pnpm dev",
-    "beforeBuildCommand": "pnpm build",
+    "beforeBuildCommand": "npm run tauri:build",
     "devPath": "http://localhost:4001",
     "distDir": "../dist",
     "withGlobalTauri": true
@@ -30,9 +30,7 @@
       "protocol": {
         "all": false,
         "asset": true,
-        "assetScope": [
-          "**"
-        ]
+        "assetScope": ["**"]
       },
       "globalShortcut": {
         "all": true
@@ -40,6 +38,12 @@
     },
     "security": {
       "csp": "default-src 'self'; img-src 'self'; asset: https://asset.localhost"
+    },
+    "updater": {
+      "active": true,
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IHJzaWduIGVuY3J5cHRlZCBzZWNyZXQga2V5ClJXUlRZMEl5V2dob2NsY0N1cTJWL1ZYc3MvZkkrM1BPaThvQ2h6MWZrSURrNFFrS29yY0FBQkFBQUFBQUFBQUFBQUlBQUFBQWVxU3QyZzlieXpWU2lwTHo5RUZiUlBSblNESUlYM0hMcFphcGFpU3ZseHNzTkJEZk5GRVgvbStPbmM2VjZVU3M1aVNYc3l2MzRqMmgvUCtNYUZkRUdEUWZFbFVOR0NRbk5IZkROT3hpZk04aDZWMmlIcm5ia0drWnNmc25WSHNsUWlmVHNha01Genc9Cg==",
+      "endpoints": ["https://github.com/Liboq/usopp/{{target}}/{{current_version}}"]
     },
     "bundle": {
       "active": true,
