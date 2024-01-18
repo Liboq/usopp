@@ -43,15 +43,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: 安装pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
+   
       - name: Setup node
         uses: actions/setup-node@v1
         with:
           node-version: 18
-
+      - name: 安装pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - name: Install Rust stable
         uses: actions-rs/toolchain@v1
         with:
@@ -73,11 +73,14 @@ jobs:
 
       - name: Install rsw
         run: cargo install rsw
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
 
       - name: Install app dependencies and build it
         run: pnpm install && pnpm build
-      - uses: tauri-apps/tauri-action@v0
+      - uses: tauri-apps/tauri-action@v0.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
