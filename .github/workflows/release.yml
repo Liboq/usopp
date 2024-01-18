@@ -28,7 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: '${{ steps.get_version.outputs.VERSION }}'
-          release_name: 'OhMyBox ${{ steps.get_version.outputs.VERSION }}'
+          release_name: 'usopp ${{ steps.get_version.outputs.VERSION }}'
           body: 'See the assets to download this version and install.'
 
   build-tauri:
@@ -45,7 +45,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Install Rust stable
         uses: actions-rs/toolchain@v1
