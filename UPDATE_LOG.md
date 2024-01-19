@@ -91,3 +91,7 @@ test13
 ## v0.0.23
 
 usopp
+
+## v0.0.24
+
+usopp test02
