@@ -1,6 +1,6 @@
 <template>
   <div class="webview" id="webview">
-    webview test1
+    webview test2
   </div>
 </template>
 <style>
