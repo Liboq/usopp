@@ -4,7 +4,7 @@ on:
   push:
     # Sequence of patterns matched against refs/tags
     tags:
-      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+      - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
 
 jobs:
   create-release:
@@ -21,16 +21,15 @@ jobs:
           echo "using version tag ${GITHUB_REF:10}"
           echo ::set-output name=version::"${GITHUB_REF:10}"
 
-      
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: '${{ steps.get_version.outputs.VERSION }}'
-          release_name: 'usopp ${{ steps.get_version.outputs.VERSION }}'
-          body: 'See the assets to download this version and install.'
+          tag_name: "${{ steps.get_version.outputs.VERSION }}"
+          release_name: "usopp ${{ steps.get_version.outputs.VERSION }}"
+          body: "See the assets to download this version and install."
 
   build-tauri:
     needs: create-release
@@ -43,7 +42,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-   
       - name: Setup node
         uses: actions/setup-node@v1
         with:
@@ -94,6 +92,14 @@ jobs:
     needs: [create-release, build-tauri]
 
     steps:
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - name: 安装pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - uses: actions/checkout@v2
       - run: pnpm i
       - run: pnpm updater
