@@ -1,0 +1,35 @@
+{
+  "version": "v0.0.27",
+  "notes": "usopp v0.0.2",
+  "pub_date": "2024-01-19T05:24:15.296Z",
+  "platforms": {
+    "win64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNFEwbW45NGp4VndNdGFOeHEvMGJnb3hhQzhQd1lQczY3M2c4ODVJVnU1d3RzZHlocmo0SU44UG9UWTNna2RwZUFTZ3lmRDZMT1VlbExiYkdMZzFwNlcvWmNsSUdiS2c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzA1NjQxODMwCWZpbGU6dXNvcHBfMC4wLjJfeDY0X2VuLVVTLm1zaS56aXAKTm9iVUcvejl5b1Y4UUpMeU1MamVSWUt0cmRKNGlFSHQwT3lHVk5OMjBNTkxOM3BLMG5tUmRWaWtuZzZqMkxmYmNQZmcwY0RLcW5VcWRLNWRyWE5mQkE9PQo=",
+      "url": "https://github.com/Liboq/usopp/releases/download/v0.0.27/usopp_0.0.2_x64_en-US.msi.zip"
+    },
+    "linux": {
+      "signature": "",
+      "url": ""
+    },
+    "darwin": {
+      "signature": "",
+      "url": ""
+    },
+    "darwin-aarch64": {
+      "signature": "",
+      "url": ""
+    },
+    "darwin-x86_64": {
+      "signature": "",
+      "url": ""
+    },
+    "linux-x86_64": {
+      "signature": "",
+      "url": ""
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNFEwbW45NGp4VndNdGFOeHEvMGJnb3hhQzhQd1lQczY3M2c4ODVJVnU1d3RzZHlocmo0SU44UG9UWTNna2RwZUFTZ3lmRDZMT1VlbExiYkdMZzFwNlcvWmNsSUdiS2c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzA1NjQxODMwCWZpbGU6dXNvcHBfMC4wLjJfeDY0X2VuLVVTLm1zaS56aXAKTm9iVUcvejl5b1Y4UUpMeU1MamVSWUt0cmRKNGlFSHQwT3lHVk5OMjBNTkxOM3BLMG5tUmRWaWtuZzZqMkxmYmNQZmcwY0RLcW5VcWRLNWRyWE5mQkE9PQo=",
+      "url": "https://github.com/Liboq/usopp/releases/download/v0.0.27/usopp_0.0.2_x64_en-US.msi.zip"
+    }
+  }
+}
