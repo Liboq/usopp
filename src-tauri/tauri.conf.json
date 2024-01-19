@@ -43,7 +43,7 @@
       "active": true,
       "dialog": true,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDU3RjE4OEY3QTc0OTQzQjgKUldTNFEwbW45NGp4VjhMRk01amdlam1uR01aOFlyZ3Q0SHA2U09ETDZWUUdiZ0FQYThLWWh5b0QK",
-      "endpoints": ["https://github.com/Liboq/usopp/{{target}}/{{arch}}/{{current_version}}"]
+      "endpoints": ["https://github.com/Liboq/usopp/blob/main/UPDATE_LOG.md"]
     },
     "bundle": {
       "active": true,
