@@ -99,3 +99,7 @@ usopp test02
 ## v0.0.25
 
 usopp test03
+
+## v0.0.26
+
+usopp test03
