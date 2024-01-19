@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "tauri": "tauri dev",
     "tauri:build": "tauri build",
-    "updater": "node scripts/updater.mjs",
+    "updater": "node scripts/update.mjs",
     "release": "node scripts/release.mjs"
   },
   "dependencies": {

@@ -95,7 +95,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: pnpm
+      - run: pnpm i
       - run: pnpm updater
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
